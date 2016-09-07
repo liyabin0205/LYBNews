@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <loopj.android.image.SmartImageView
+        android:id="@+id/thumbnail_pic_s"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是标题，上海千峰安卓1608期毕业平均薪资15K"
+        android:layout_toRightOf="@id/thumbnail_pic_s"
+        android:paddingTop="4dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail_pic_s"
+        android:layout_below="@id/tv_title"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_realtype"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="独家"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="2016.3.25 14:35"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
